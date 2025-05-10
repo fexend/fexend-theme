@@ -1,0 +1,285 @@
+# Fexend Theme GraphQL Schema
+
+"""
+User account information
+"""
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  firstName: String
+  lastName: String
+  fullName: String
+  role: UserRole!
+  active: Boolean!
+  profile: UserProfile
+  posts: [Post!]
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+"""
+User profile with additional information
+"""
+type UserProfile {
+  id: ID!
+  user: User!
+  bio: String
+  avatar: String
+  website: String
+  twitter: String
+  github: String
+  linkedin: String
+  location: String
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+"""
+Blog post content
+"""
+type Post {
+  id: ID!
+  title: String!
+  slug: String!
+  content: String!
+  excerpt: String
+  featuredImage: String
+  author: User!
+  categories: [Category!]!
+  comments: [Comment!]
+  status: PostStatus!
+  publishedAt: DateTime
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+"""
+Content category
+"""
+type Category {
+  id: ID!
+  name: String!
+  slug: String!
+  description: String
+  parent: Category
+  children: [Category!]
+  posts: [Post!]
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+"""
+Post comment
+"""
+type Comment {
+  id: ID!
+  post: Post!
+  user: User
+  parent: Comment
+  replies: [Comment!]
+  content: String!
+  authorName: String
+  authorEmail: String
+  approved: Boolean!
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+"""
+Site settings
+"""
+type Setting {
+  key: String!
+  value: String
+  description: String
+}
+
+"""
+User roles
+"""
+enum UserRole {
+  ADMIN
+  EDITOR
+  USER
+}
+
+"""
+Post status
+"""
+enum PostStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+"""
+Date with time (ISO 8601)
+"""
+scalar DateTime
+
+"""
+Input for creating a user
+"""
+input CreateUserInput {
+  username: String!
+  email: String!
+  password: String!
+  firstName: String
+  lastName: String
+  role: UserRole
+}
+
+"""
+Input for updating a user
+"""
+input UpdateUserInput {
+  username: String
+  email: String
+  firstName: String
+  lastName: String
+  role: UserRole
+  active: Boolean
+  password: String
+}
+
+"""
+Input for user profile data
+"""
+input UserProfileInput {
+  bio: String
+  avatar: String
+  website: String
+  twitter: String
+  github: String
+  linkedin: String
+  location: String
+}
+
+"""
+Input for creating a post
+"""
+input CreatePostInput {
+  title: String!
+  content: String!
+  excerpt: String
+  featuredImage: String
+  categoryIds: [ID!]
+  status: PostStatus
+  publishedAt: DateTime
+}
+
+"""
+Input for updating a post
+"""
+input UpdatePostInput {
+  title: String
+  content: String
+  excerpt: String
+  featuredImage: String
+  categoryIds: [ID!]
+  status: PostStatus
+  publishedAt: DateTime
+}
+
+"""
+Query root
+"""
+type Query {
+  # User queries
+  currentUser: User
+  user(id: ID!): User
+  users(
+    limit: Int = 10
+    offset: Int = 0
+    role: UserRole
+    active: Boolean
+  ): [User!]!
+
+  # Post queries
+  post(id: ID, slug: String): Post
+  posts(
+    limit: Int = 10
+    offset: Int = 0
+    status: PostStatus
+    categoryId: ID
+    authorId: ID
+  ): [Post!]!
+
+  # Category queries
+  category(id: ID, slug: String): Category
+  categories(parentId: ID): [Category!]!
+
+  # Comments queries
+  comments(
+    postId: ID!
+    limit: Int = 10
+    offset: Int = 0
+    approved: Boolean
+  ): [Comment!]!
+
+  # Setting queries
+  setting(key: String!): Setting
+  settings: [Setting!]!
+}
+
+"""
+Mutation root
+"""
+type Mutation {
+  # User mutations
+  createUser(input: CreateUserInput!): User!
+  updateUser(id: ID!, input: UpdateUserInput!): User!
+  deleteUser(id: ID!): Boolean!
+  updateUserProfile(userId: ID!, input: UserProfileInput!): UserProfile!
+
+  # Authentication mutations
+  login(username: String!, password: String!): AuthPayload!
+  logout: Boolean!
+
+  # Post mutations
+  createPost(input: CreatePostInput!): Post!
+  updatePost(id: ID!, input: UpdatePostInput!): Post!
+  deletePost(id: ID!): Boolean!
+
+  # Category mutations
+  createCategory(name: String!, description: String, parentId: ID): Category!
+  updateCategory(
+    id: ID!
+    name: String
+    description: String
+    parentId: ID
+  ): Category!
+  deleteCategory(id: ID!): Boolean!
+
+  # Comment mutations
+  createComment(
+    postId: ID!
+    content: String!
+    parentId: ID
+    authorName: String
+    authorEmail: String
+  ): Comment!
+  updateComment(id: ID!, content: String!): Comment!
+  deleteComment(id: ID!): Boolean!
+  approveComment(id: ID!, approved: Boolean!): Comment!
+
+  # Setting mutations
+  updateSetting(key: String!, value: String): Setting!
+}
+
+"""
+Authentication payload
+"""
+type AuthPayload {
+  token: String!
+  user: User!
+}
+
+"""
+Subscription root
+"""
+type Subscription {
+  commentAdded(postId: ID!): Comment!
+  postPublished: Post!
+}

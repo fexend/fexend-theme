@@ -1,0 +1,90 @@
+# Fexend Theme Configuration
+
+# Application settings
+app:
+  name: Fexend Theme
+  version: 1.0.0
+  environment: development
+  debug: true
+  timezone: UTC
+  locale: en_US
+  url: http://localhost:8080
+
+# Database connection
+database:
+  driver: mysql
+  connections:
+    mysql:
+      host: 127.0.0.1
+      port: 3306
+      database: fexend_db
+      username: root
+      password: secret
+      charset: utf8mb4
+      collation: utf8mb4_unicode_ci
+      prefix: ""
+    sqlite:
+      database: database.sqlite
+      prefix: ""
+
+# Cache configuration
+cache:
+  driver: file
+  stores:
+    file:
+      path: /var/www/fexend-theme/cache
+    redis:
+      host: 127.0.0.1
+      port: 6379
+      database: 0
+      password: null
+
+# Mail settings
+mail:
+  driver: smtp
+  host: smtp.mailtrap.io
+  port: 2525
+  username: null
+  password: null
+  encryption: tls
+  from:
+    address: noreply@example.com
+    name: Fexend
+
+# File storage
+storage:
+  driver: local
+  paths:
+    public: /var/www/fexend-theme/public
+    uploads: /var/www/fexend-theme/public/uploads
+  allowed_extensions:
+    - jpg
+    - jpeg
+    - png
+    - gif
+    - pdf
+    - doc
+    - docx
+    - xls
+    - xlsx
+  max_upload_size: 10485760 # 10MB
+
+# Theme settings
+theme:
+  color_scheme: light
+  available_schemes:
+    - light
+    - dark
+    - blue
+    - green
+  fonts:
+    primary: Arial, sans-serif
+    secondary: Georgia, serif
+    code: Consolas, monospace
+  responsive_breakpoints:
+    xs: 0
+    sm: 576
+    md: 768
+    lg: 992
+    xl: 1200
+    xxl: 1400

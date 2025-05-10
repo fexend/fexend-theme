@@ -1,0 +1,69 @@
+{
+  "site": {
+    "name": "Fexend Theme",
+    "description": "A versatile theme for modern web applications",
+    "version": "1.0.0",
+    "author": "Fexend Team"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "admin",
+      "active": true,
+      "meta": {
+        "lastLogin": "2023-10-15T14:22:00Z",
+        "preferences": {
+          "theme": "dark",
+          "notifications": true
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "role": "editor",
+      "active": true,
+      "meta": {
+        "lastLogin": "2023-10-14T09:45:00Z",
+        "preferences": {
+          "theme": "light",
+          "notifications": false
+        }
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "responsive-design",
+      "name": "Responsive Design",
+      "enabled": true,
+      "description": "Adapts to any screen size"
+    },
+    {
+      "id": "dark-mode",
+      "name": "Dark Mode",
+      "enabled": true,
+      "description": "Easy on the eyes at night"
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics Integration",
+      "enabled": false,
+      "description": "Track user behavior"
+    }
+  ],
+  "config": {
+    "api": {
+      "endpoint": "https://api.example.com",
+      "timeout": 5000,
+      "retries": 3
+    },
+    "cache": {
+      "enabled": true,
+      "duration": 3600
+    }
+  }
+}

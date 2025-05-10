@@ -1,0 +1,38 @@
+<!-- filepath: /var/www/fexend-theme/test/assets/logo.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="200"
+  height="60"
+  viewBox="0 0 200 60"
+>
+  <style>
+    .text {
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+    }
+    .theme-text {
+      fill: #3498db;
+    }
+    .main-text {
+      fill: #2c3e50;
+    }
+    .icon-circle {
+      fill: #3498db;
+    }
+    .icon-line {
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+    }
+  </style>
+
+  <!-- Logo Icon -->
+  <circle class="icon-circle" cx="30" cy="30" r="20" />
+  <line class="icon-line" x1="20" y1="30" x2="40" y2="30" />
+  <line class="icon-line" x1="20" y1="24" x2="40" y2="24" />
+  <line class="icon-line" x1="20" y1="36" x2="40" y2="36" />
+
+  <!-- Logo Text -->
+  <text x="60" y="38" class="text main-text" font-size="24">Fexend</text>
+  <text x="140" y="38" class="text theme-text" font-size="24">Theme</text>
+</svg>
