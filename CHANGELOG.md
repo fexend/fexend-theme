@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "fexend-theme" extension will be documented in this file.
+## [1.0.0] - 2025-07-30
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
-
-- Initial release
+- Initial release of Fexend Theme
+- Dark theme with Tailwind CSS inspired colors
+- Support for syntax highlighting across multiple languages
