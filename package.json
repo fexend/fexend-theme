@@ -2,7 +2,7 @@
 	"name": "fexend-theme",
 	"displayName": "Fexend Theme",
 	"description": "A dark, vibrant Visual Studio Code theme inspired by Tailwind CSS and the Shades of Purple theme",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "Fexend",
 	"engines": {
 		"vscode": "^1.100.0"
