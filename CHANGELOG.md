@@ -14,3 +14,14 @@
 
 - [Issue 1](https://github.com/fexend/fexend-theme/issues/1)
 - [Issue 3](https://github.com/fexend/fexend-theme/issues/3)
+
+## [1.0.2] - 2025-08-04
+
+### Fixed
+
+- [Issue 5](https://github.com/fexend/fexend-theme/issues/5)
+- [Issue 7](https://github.com/fexend/fexend-theme/issues/7)
+
+### New feature
+
+- [Issue 6](https://github.com/fexend/fexend-theme/issues/6)
