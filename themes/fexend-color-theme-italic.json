@@ -472,9 +472,9 @@
 		// https://code.visualstudio.com/api/references/theme-color#diff-editor-colors
 		// DIFF EDITOR COLORS -----------------
 		"diffEditor.insertedTextBackground": "#00c95020",
-		"diffEditor.insertedTextBorder": "#00c950",
+		"diffEditor.insertedTextBorder": "#00c95010",
 		"diffEditor.removedTextBackground": "#fb2c3620",
-		"diffEditor.removedTextBorder": "#fb2c36",
+		"diffEditor.removedTextBorder": "#fb2c3610",
 		"diffEditor.border": "#ffffff20",
 		"diffEditor.diagonalFill": "#7c86ff20",
 		"diffEditor.insertedLineBackground": "#00c95020",
