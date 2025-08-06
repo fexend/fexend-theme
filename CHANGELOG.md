@@ -25,3 +25,9 @@
 ### New feature
 
 - [Issue 6](https://github.com/fexend/fexend-theme/issues/6)
+
+# [1.0.4]
+
+### Fixed
+
+- [issue 14](https://github.com/fexend/fexend-theme/issues/14)
