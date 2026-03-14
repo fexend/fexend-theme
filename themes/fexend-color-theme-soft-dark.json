@@ -300,7 +300,67 @@
 		"tree.indentGuidesStroke": "#7c86ff20",
 		"tree.inactiveIndentGuidesStroke": "#7c86ff20",
 		"tree.tableColumnsBorder": "#7c86ff20",
-		"tree.tableOddRowsBackground": "#7c86ff20"
+		"tree.tableOddRowsBackground": "#7c86ff20",
+
+		// EDITOR WIDGET COLORS ---------------
+		"editorWidget.foreground": "#e2e8f0",
+		"editorWidget.background": "#0f172a",
+		"editorWidget.border": "#7c86ff20",
+		"editorWidget.resizeBorder": "#7c86ff20",
+		"editorSuggestWidget.background": "#0f172a",
+		"editorSuggestWidget.border": "#7c86ff20",
+		"editorSuggestWidget.foreground": "#e2e8f0",
+		"editorSuggestWidget.focusHighlightForeground": "#e2e8f0",
+		"editorSuggestWidget.highlightForeground": "#e2e8f0",
+		"editorSuggestWidget.selectedBackground": "#7c86ff20",
+		"editorSuggestWidget.selectedForeground": "#e2e8f0",
+		"editorSuggestWidget.selectedIconForeground": "#e2e8f0",
+		"editorSuggestWidgetStatus.foreground": "#e2e8f080",
+		"editorHoverWidget.foreground": "#e2e8f0",
+		"editorHoverWidget.background": "#0f172a",
+		"editorHoverWidget.border": "#7c86ff20",
+		"editorHoverWidget.highlightForeground": "#e2e8f0",
+		"editorHoverWidget.statusBarBackground": "#0f172a",
+		"debugExceptionWidget.background": "#0f172a",
+		"debugExceptionWidget.border": "#7c86ff20",
+		// EDITOR WIDGET COLORS ---------------
+
+		// COMMAND CENTER COLORS --------------
+		"commandCenter.foreground": "#e2e8f0",
+		"commandCenter.activeForeground": "#e2e8f0",
+		"commandCenter.background": "#0f172a",
+		"commandCenter.activeBackground": "#0f172a",
+		"commandCenter.border": "#7c86ff20",
+		"commandCenter.inactiveForeground": "#e2e8f080",
+		"commandCenter.inactiveBorder": "#7c86ff20",
+		"commandCenter.activeBorder": "#7c86ff",
+		"commandCenter.debuggingBackground": "#0f172a20",
+		// COMMAND CENTER COLORS --------------
+
+		// NOTIFICATION COLORS ----------------
+		"notificationCenter.border": "#7c86ff20",
+		"notificationCenterHeader.foreground": "#e2e8f0",
+		"notificationCenterHeader.background": "#0f172a",
+		"notificationToast.border": "#7c86ff20",
+		"notifications.foreground": "#e2e8f0",
+		"notifications.background": "#0f172a",
+		"notifications.border": "#7c86ff20",
+		"notificationLink.foreground": "#e2e8f0",
+		"notificationsErrorIcon.foreground": "#fb2c36",
+		"notificationsWarningIcon.foreground": "#f59e08",
+		"notificationsInfoIcon.foreground": "#00b8db",
+		// NOTIFICATION COLORS ----------------
+
+		// QUICK PICKER COLORS ----------------
+		"pickerGroup.border": "#7c86ff",
+		"pickerGroup.foreground": "#e2e8f0",
+		"quickInput.background": "#0f172a",
+		"quickInput.foreground": "#e2e8f0",
+		"quickInputList.focusBackground": "#7c86ff20",
+		"quickInputList.focusForeground": "#e2e8f0",
+		"quickInputList.focusIconForeground": "#e2e8f0",
+		"quickInputTitle.background": "#0f172a"
+		// QUICK PICKER COLORS ----------------
 	},
 	"tokenColors": [
 		{
