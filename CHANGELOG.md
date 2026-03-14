@@ -26,8 +26,23 @@
 
 - [Issue 6](https://github.com/fexend/fexend-theme/issues/6)
 
-# [1.0.4]
+## [1.0.4] - 2026-03-14
+
+### Added
+
+- [Issue 2](https://github.com/fexend/fexend-theme/issues/2) - Soft Dark theme variant with softer slate backgrounds
 
 ### Fixed
 
-- [issue 14](https://github.com/fexend/fexend-theme/issues/14)
+- [Issue 14](https://github.com/fexend/fexend-theme/issues/14)
+
+## [1.0.5] - 2026-03-15
+
+### Added
+
+- [Issue 20](https://github.com/fexend/fexend-theme/issues/20) - Comprehensive Markdown syntax highlighting to all themes
+
+### Fixed
+
+- [Issue 16](https://github.com/fexend/fexend-theme/issues/16) - Missing popup/widget color sections in Medium Purple and Soft Dark themes
+- [Issue 19](https://github.com/fexend/fexend-theme/issues/19) - Missing menu color definitions in Medium Purple and Soft Dark themes
