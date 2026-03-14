@@ -188,6 +188,20 @@
 		"titleBar.border": "#1e293b",
 		// TITLE BAR COLORS ------------------
 
+		// MENU BAR COLORS -------------------
+		// https://code.visualstudio.com/api/references/theme-color#menu-bar-colors
+		"menubar.selectionForeground": "#e2e8f0",
+		"menubar.selectionBackground": "#7c86ff20",
+		"menubar.selectionBorder": "#7c86ff",
+		"menu.foreground": "#e2e8f0",
+		"menu.background": "#1e293b",
+		"menu.selectionForeground": "#e2e8f0",
+		"menu.selectionBackground": "#7c86ff30",
+		"menu.selectionBorder": "#7c86ff",
+		"menu.separatorBackground": "#7c86ff30",
+		"menu.border": "#243448",
+		// MENU BAR COLORS -------------------
+
 		// TERMINAL COLORS -------------------
 		"terminal.background": "#1e293b",
 		"terminal.border": "#243448",
