@@ -2,7 +2,7 @@
 	"name": "fexend-theme",
 	"displayName": "Fexend Theme",
 	"description": "A dark, vibrant Visual Studio Code theme inspired by Tailwind CSS and the Shades of Purple theme",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"publisher": "Fexend",
 	"engines": {
 		"vscode": "^1.100.0"
@@ -50,6 +50,16 @@
 				"label": "Fexend Theme Soft Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/fexend-color-theme-soft-dark.json"
+			},
+			{
+				"label": "Fexend Theme Soft Dark Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fexend-color-theme-soft-dark-italic.json"
+			},
+			{
+				"label": "Fexend Theme Medium Purple Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fexend-color-theme-medium-purple-italic.json"
 			}
 		]
 	}
