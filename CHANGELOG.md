@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.6] - 2026-03-20
+
+### Added
+
+- [Issue 27](https://github.com/fexend/fexend-theme/issues/27) - Fexend Theme Soft Dark Italic variant with italic font styles for strings, variables, keywords, functions, and classes
+- [Issue 27](https://github.com/fexend/fexend-theme/issues/27) - Fexend Theme Medium Purple Italic variant with italic font styles for strings, variables, keywords, functions, and classes
+
 ## [1.0.0] - 2025-07-30
 
 ### Added
