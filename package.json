@@ -50,6 +50,16 @@
 				"label": "Fexend Theme Soft Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/fexend-color-theme-soft-dark.json"
+			},
+			{
+				"label": "Fexend Theme Soft Dark Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fexend-color-theme-soft-dark-italic.json"
+			},
+			{
+				"label": "Fexend Theme Medium Purple Italic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fexend-color-theme-medium-purple-italic.json"
 			}
 		]
 	}
