@@ -28,9 +28,17 @@ A softer, easier-on-the-eyes dark theme with slate backgrounds.
 
 ![Fexend Theme Soft Dark](images/theme-soft-dark.png)
 
+### Fexend Theme Soft Dark Italic
+
+Soft Dark variant with italic font styles applied to strings, variables, keywords, functions, and classes.
+
+### Fexend Theme Medium Purple Italic
+
+Medium Purple variant with italic font styles applied to strings, variables, keywords, functions, and classes.
+
 ## Features
 
-- **4 theme variants** — Default, Italic, Medium Purple, and Soft Dark
+- **6 theme variants** — Default, Italic, Medium Purple, Soft Dark, Soft Dark Italic, and Medium Purple Italic
 - **Dark mode** with carefully selected color palette
 - **Italic and bold syntax highlighting** for improved code readability
 - **Consistent colors** across UI elements and code tokens
@@ -49,6 +57,8 @@ A softer, easier-on-the-eyes dark theme with slate backgrounds.
    - `Fexend Theme Italic`
    - `Fexend Theme Medium Purple`
    - `Fexend Theme Soft Dark`
+   - `Fexend Theme Soft Dark Italic`
+   - `Fexend Theme Medium Purple Italic`
 
 ## Credits
 
