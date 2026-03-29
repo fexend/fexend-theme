@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.7] - 2026-03-29
+
+### Fixed
+
+- [Issue 29](https://github.com/fexend/fexend-theme/issues/29) - Synced color schema between Soft Dark and Soft Dark Italic, and between Medium Purple and Medium Purple Italic by adding missing token entries (Storage Types, Operators, CSS Selectors, CSS Properties, JSON Keys, YAML Keys, YAML Values, Punctuation) to the non-italic variants
+
 ## [1.0.6] - 2026-03-20
 
 ### Added
