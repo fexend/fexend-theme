@@ -471,6 +471,33 @@
 			}
 		},
 		{
+			"name": "Storage Types",
+			"scope": [
+				"storage.type",
+				"storage.modifier",
+				"storage.type.class",
+				"storage.type.function",
+				"storage.type.var"
+			],
+			"settings": {
+				"foreground": "#fb7185",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Operators",
+			"scope": [
+				"keyword.operator",
+				"keyword.operator.arithmetic",
+				"keyword.operator.assignment",
+				"keyword.operator.comparison",
+				"keyword.operator.logical"
+			],
+			"settings": {
+				"foreground": "#fb7185"
+			}
+		},
+		{
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
@@ -690,6 +717,59 @@
 			],
 			"settings": {
 				"foreground": "#fde047"
+			}
+		},
+		{
+			"name": "CSS Selectors",
+			"scope": [
+				"entity.name.tag.css",
+				"entity.other.attribute-name.class.css",
+				"entity.other.attribute-name.id.css"
+			],
+			"settings": {
+				"foreground": "#fb7185"
+			}
+		},
+		{
+			"name": "CSS Properties",
+			"scope": ["support.type.property-name.css"],
+			"settings": {
+				"foreground": "#38bdf8"
+			}
+		},
+		{
+			"name": "JSON Keys",
+			"scope": [
+				"support.type.property-name.json",
+				"string.quoted.double.json support.type.property-name.json"
+			],
+			"settings": {
+				"foreground": "#38bdf8"
+			}
+		},
+		{
+			"name": "YAML Keys",
+			"scope": ["entity.name.tag.yaml"],
+			"settings": {
+				"foreground": "#38bdf8"
+			}
+		},
+		{
+			"name": "YAML Values",
+			"scope": ["string.unquoted.yaml"],
+			"settings": {
+				"foreground": "#34d399"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": [
+				"punctuation.separator",
+				"punctuation.terminator",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#94a3b8"
 			}
 		}
 	],
