@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.8] - 2026-04-25
+
+### Fixed
+
+- [Issue 31](https://github.com/fexend/fexend-theme/issues/31) - Fixed invisible input validation messages (error/warning/info) in the file explorer across all 6 theme variants by using dark tinted backgrounds with contrasting light foregrounds
+
 ## [1.0.7] - 2026-03-29
 
 ### Fixed
