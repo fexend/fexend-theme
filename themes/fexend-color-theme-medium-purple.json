@@ -287,6 +287,25 @@
 		"debugExceptionWidget.border": "#7c86ff20",
 		// EDITOR WIDGET COLORS ---------------
 
+		// PEEK VIEW COLORS -------------------
+		"peekView.border": "#7c86ff20",
+		"peekViewEditor.background": "#2d2148",
+		"peekViewEditorGutter.background": "#2d2148",
+		"peekViewEditor.matchHighlightBackground": "#7c86ff40",
+		"peekViewEditor.matchHighlightBorder": "#7c86ff",
+		"peekViewEditorStickyScroll.background": "#2d2148",
+		"peekViewEditorStickyScrollGutter.background": "#2d2148",
+		"peekViewResult.background": "#252040",
+		"peekViewResult.fileForeground": "#ffffff",
+		"peekViewResult.lineForeground": "#ffffff80",
+		"peekViewResult.matchHighlightBackground": "#7c86ff40",
+		"peekViewResult.selectionBackground": "#7c86ff30",
+		"peekViewResult.selectionForeground": "#ffffff",
+		"peekViewTitle.background": "#1e1537",
+		"peekViewTitleDescription.foreground": "#ffffff80",
+		"peekViewTitleLabel.foreground": "#ffffff",
+		// PEEK VIEW COLORS -------------------
+
 		// COMMAND CENTER COLORS --------------
 		"commandCenter.foreground": "#ffffff",
 		"commandCenter.activeForeground": "#ffffff",

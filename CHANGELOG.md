@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.10] - 2026-08-20
+
+### Fixed
+
+- [Issue 36](https://github.com/fexend/fexend-theme/issues/36) - Fixed the Peek References / Peek Definition widget rendering with VS Code's default near-black background and orange match highlights in Medium Purple, Medium Purple Italic, Soft Dark, and Soft Dark Italic. Those four variants defined no `peekView*` colors at all, so the whole widget fell back to the built-in dark defaults. Added the full peek view color set (editor, gutter, sticky scroll, result list, title bar, match highlights) mapped to each theme's own surfaces and accent.
+
 ## [1.0.9] - 2026-08-12
 
 ### Fixed
